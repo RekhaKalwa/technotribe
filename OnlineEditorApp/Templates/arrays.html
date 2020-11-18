@@ -1,0 +1,173 @@
+
+
+{% extends 'home.html' %}
+{% block body %}
+
+<style>
+.split {
+width: 100%;
+overflow:auo;
+}
+
+.fleft {
+    float:left;
+    padding: 10;
+    width: 40%;
+background:white;
+    height: 500px;
+    overflow: scroll;
+}
+
+.fright {
+float: right;
+    background:white;
+    height: 500px;
+    width: 60%;
+    overflow: scroll;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+  align: right
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: white;
+  align:left;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.header1 {
+  background-color: #F6F5FA;
+  padding: 6px;
+  color: black
+}
+
+.header2 {
+  background-color: None;
+}
+
+
+
+</style>
+
+<div class="split">
+    <div class="fleft">
+        <div class="header1">
+            <div  class="header2">
+                <h5>Concept</h5>
+            </div>
+        </div><br>
+        <h5>Arrays</h5>
+        <p>
+            An array is a data structure for storing more than one data item that has a similar data type.
+            Array Representation:<br>
+             <center> array = [Element[0],Element[1],Element[2],Element[3],Element[5]] </center><br>
+            Like lists, arrays are ordered, meaning each item has a numbered position.<br><br>
+            Array name: necessary for easy reference to the collection of elements
+            Data Type: necessary for type checking and data integrity
+            Elements: these are the data values present in an array<br><br>
+            <i>Let's write array Syntax in python:</i><br><br><center>
+            arrayName = array.array(typecode, [Initializers])</center><br>
+            Here we show you how to use LISTS as ARRAYS.<br><br>
+            Python has a separate module for handling arrays called array,
+            which you need to import before you start working on them.<br>
+            The array is versatile, and can serve as a useful tool in many different situations,
+            but let’s just give one quick example.<br><br><i>Here’s an array of balance amount:</i><br><br>
+            balance = array.array('i', [300,200,100])<br><br>
+            <div class="header1">
+                <div  class="header2">
+                    <h5>Instructions</h5>
+                </div>
+            </div>
+            Run the code to see what is printed to the console.
+
+        </p>
+
+<!--             Arrays can be declared in various ways in different languages. For illustration, let's take C array declaration.</p>-->
+
+    </div>
+
+    <div class="fright">
+        <iframe height="500px" width="100%" src="https://repl.it/@Kalwa24/Arrays?lite=true"
+            scrolling="yes" frameborder="yes" allowtransparency="true" allowfullscreen="true"
+            sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+
+    </div>
+
+</div>
+<br><br><br><br>
+
+<a href="{% url 'OnlineEditorApp:ArrayTraverse' %}"  class="next">Next </a>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--&lt;!&ndash;scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true"&ndash;&gt;-->
+<!--&lt;!&ndash;        sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"&ndash;&gt;-->
+
+
+
+<!--               Name               Elements-->
+<!--                 |           (&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;)-->
+<!--           int array [10] = {1,2,3,4,5,6,7,8,9,10}-->
+
+
+<!--Array Declaration-->
+<!--Arrays can be declared in various ways in different languages. For illustration, let's take C array declaration.-->
+
+<!--Array Representation-->
+<!--As per the above illustration, following are the important points to be considered.-->
+
+<!--Index starts with 0.-->
+
+<!--Array length is 10 which means it can store 10 elements.-->
+
+<!--Each element can be accessed via its index. For example, we can fetch an element at index 6 as 9.-->
+
+<!--Basic Operations-->
+<!--Following are the basic operations supported by an array.-->
+
+<!--Traverse − print all the array elements one by one.-->
+
+<!--Insertion − Adds an element at the given index.-->
+
+<!--Deletion − Deletes an element at the given index.-->
+
+<!--Search − Searches an element using the given index or by the value.-->
+
+<!--Update − Updates an element at the given index.-->

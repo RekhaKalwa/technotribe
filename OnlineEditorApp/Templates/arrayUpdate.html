@@ -1,0 +1,107 @@
+
+{% extends 'home.html' %}
+{% block body %}
+
+<style>
+.split {
+width: 100%;
+overflow:auo;
+}
+
+.fleft {
+    float:left;
+    width: 40%;
+background:white;
+    height: 500px;
+    overflow: scroll;
+}
+
+.fright {
+float: right;
+    background:white;
+    height: 500px;
+    width: 60%;
+    overflow: scroll;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+  align: right
+}
+
+.previous {
+  background-color: #4CAF50;
+  color: white;
+  align:left;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.header1 {
+  background-color: #F6F5FA;
+  padding: 6px;
+  color: black
+}
+
+.header2 {
+  background-color: None;
+}
+
+
+
+
+</style>
+
+<div class="split">
+    <div class="fleft">
+        <div class="header1">
+            <div  class="header2">
+                <h5>Concept</h5>
+            </div>
+        </div><br>
+         <h5>Update</h5>
+        <p>Update − Updates an element at the given index.<br>
+           This operation is quite similar to the insert method, except that it will replace the existing value at the given index.<br>
+            This means will simply assign a new value at the given index. This method expects two arguments index and value.<br><br>
+            <i> Python Syntax to update an element in an array:</i><center>
+                        arrayName.udpate(index, value)   </center><br>
+        </p>
+        <div class="header1">
+            <div  class="header2">
+                <h5>Instructions</h5>
+            </div>
+        </div><br>
+        1. Create an array of strings. <br>
+            Elements: "apples", "bananas", "cucumbers", "dates", "elderberries" <br>
+        2. Add a new value "figs" right after the second item of the array.<br>
+        3. Remove third value from the array.<br>
+        4. Search index of "dates" in the array.<br>
+        5. Replace "elderberries" with "grapes".<br>
+        6. Print the updated array to the console.<br>
+
+  </div>
+
+
+      <div class="fright">
+
+        <iframe height="500px" width="100%" src="https://repl.it/@Kalwa24/ArrayUpdate?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true"
+                sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      </div>
+</div>
+<a href="{% url 'OnlineEditorApp:ArraySearch' %}" class="previous"> Previous</a>
+
+
+{% endblock %}
+</body>
+</html>

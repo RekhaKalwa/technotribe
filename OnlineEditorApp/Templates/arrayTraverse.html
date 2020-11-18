@@ -1,0 +1,101 @@
+{% extends 'home.html' %}
+{% block body %}
+
+<style>
+.split {
+width: 100%;
+overflow:auo;
+}
+
+.fleft {
+    float:left;
+    width: 40%;
+background:white;
+    height: 500px;
+    overflow: scroll;
+}
+
+.fright {
+float: right;
+    background:white;
+    height: 500px;
+    width: 60%;
+    overflow: scroll;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+  align: right
+}
+
+.previous {
+  background-color: #4CAF50;
+  color: white;
+  align:left;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.header1 {
+  background-color: #F6F5FA;
+  padding: 6px;
+  color: black
+}
+
+.header2 {
+  background-color: None;
+}
+
+
+
+</style>
+
+<div class="split">
+    <div class="fleft">
+        <div class="header1">
+            <div  class="header2">
+                <h5>Concept</h5>
+            </div>
+        </div><br>
+        <h5>Traverse </h5>
+        <p>
+            This operation is to traverse through the elements of an array.<br><br>
+            <div class="header1">
+                <div  class="header2">
+                    <h5>Instructions</h5>
+                </div>
+            </div><br>
+<!--            1.You can traverse a python array by using loops.<br>-->
+            1. Traverse through the array.<br>
+            2. Print to the console.
+        </p>
+
+    </div>
+
+    <div class="fright">
+        <iframe height="500px" width="100%" src="https://repl.it/@Kalwa24/ArrayTraverse?lite=true"
+                scrolling="yes" frameborder="yes" allowtransparency="true" allowfullscreen="true"
+                sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+
+    </div>
+
+</div>
+<!--<br><br><br>-->
+
+<a href="{% url 'OnlineEditorApp:Arrays' %}" class="previous"> Previous</a>
+<a href="{% url 'OnlineEditorApp:ArrayInsertion' %}" class="next">Next </a>
+
+{% endblock %}
+
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Techno Tribe {% endblock %}</title>
+</head>
+<body>
+<div>
+<a href = ''>Techno Tribe </a>
+    <ul>
+    {% if request.user.is.authenticated %}
+        <li><a href="{% url 'logout' %}"> Log Out</a></li>
+    {% else %}
+        <li><a href="{% url 'login' %}"> Log In</a></li>
+    {% endif %}
+    </ul>
+</div>
+<div>
+    {% block body %}
+    {% endblock %}
+</div>
+
+</body>
+</html>

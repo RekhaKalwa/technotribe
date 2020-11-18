@@ -1,0 +1,74 @@
+
+{% extends 'home.html' %}
+{% block body %}
+
+<style>
+.split {
+width: 100%;
+overflow:auo;
+}
+
+.fleft {
+    float:left;
+    width: 40%;
+background:white;
+    height: 500px;
+}
+
+.fright {
+float: right;
+    background:white;
+    height: 500px;
+    width: 60%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+  align: right
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: white;
+  align:left;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+</style>
+
+<div class="split">
+  <div class="fleft" >
+  <p>   <h2> Google </h2>
+        <a href="">Min Amplitude</a><br>
+           <a href="">Ways to Split String</a><br>
+           <a href="">Compare Strings</a><br>
+
+           <a href="">Maximum Level Sum of a Binary Tree</a><br>
+           <a href="">Largest Subarray Length K</a><br>
+           <a href="">Maximum Time</a>
+  </p>
+  </div>
+</div>
+
+<div class="split">
+  <div class="fright">
+    <iframe height="400px" width="100%" src="https://repl.it/@Kalwa24/ArraysIQuestions?lite=true"
+            scrolling="yes" frameborder="yes" allowtransparency="true" allowfullscreen="true"
+            sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+  </div>
+</div>
+<!--</body>-->
+{% endblock %}
